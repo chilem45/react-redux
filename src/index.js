@@ -1,5 +1,4 @@
 import React from "react";
-import App from "./App";
 import "./styles/index.scss";
 
 import { configureStore } from "@reduxjs/toolkit";
@@ -8,6 +7,8 @@ import { Provider } from "react-redux";
 import { getPosts } from "./actions/post.action";
 import { getUser } from "./actions/user.action";
 import rootReducer from "./reducer";
+import './i18n';
+import WrappedApp from "./App";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -20,6 +21,6 @@ store.dispatch(getUser());
 store.dispatch(getPosts());
 root.render(
     <Provider store={store}>
-        <App />
+        <WrappedApp />
     </Provider>
 );
