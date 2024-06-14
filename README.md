@@ -13,3 +13,7 @@ Télécharger Redux DevTools
 npm i -g json-server
 "json-server -w db.json" || "npm run server"
 # react-redux
+
+# traduction with i18next
+ ** install i18next **
+ npm install i18next react-i18next i18next-browser-languagedetector i18next-http-backend
