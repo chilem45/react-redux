@@ -9,6 +9,7 @@ import { getUser } from "./actions/user.action";
 import rootReducer from "./reducer";
 import './i18n';
 import WrappedApp from "./App";
+import App from "./App";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -21,6 +22,6 @@ store.dispatch(getUser());
 store.dispatch(getPosts());
 root.render(
     <Provider store={store}>
-        <WrappedApp />
+        <App />
     </Provider>
 );

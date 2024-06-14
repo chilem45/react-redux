@@ -13,7 +13,7 @@ const App = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      i18n.changeLanguage('es'); 
+      i18n.changeLanguage('en'); 
     }, 9000);
   });
 
@@ -33,11 +33,4 @@ const App = () => {
     </div>
   );
 };
-
-export default function WrappedApp() {
-  return (
-    <Suspense fallback="...loading">
-      <App />
-    </Suspense>
-  )
-}
+export default  App;
